@@ -63,8 +63,3 @@ The underlying idea is:
 - The model maintains a low Mean Absolute Error (MAE) on the test set, demonstrating accurate tracking of volatility shifts without severe lag.
 - Residual analysis confirms that errors are centered around zero, indicating an unbiased estimation across different market regimes.
 
-## Limitations & Future Work
-
-- The current feature set relies on daily close prices; incorporating high-frequency intraday data (e.g., realized volatility from order books) could enhance predictive accuracy.
-- Hyperparameter tuning could be expanded using automated Bayesian Optimization (e.g., KerasTuner) to explore deeper architectures and learning rate schedules.
-- Future iterations could explore hybrid models (e.g., CNN-LSTM or Transformer-based architectures) to capture both spatial feature interactions and longer temporal horizons.
